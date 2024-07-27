@@ -1,0 +1,88 @@
+* {
+    text-align: center;
+    }
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+    .image-container{
+    background-image: url("./images/headphones_hero_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    
+    }
+    header {
+        display: flex; 
+        justify-content: center;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        width: 80%;
+    }
+    header nav ul {
+        list-style-type: none;
+        display: flex; 
+        gap: 41px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+    }
+    button {
+        height: 44px;
+        width: 162px;
+        border: none;
+        color: white;
+        border-radius: 22px;
+        background-color: #FF6565;
+    }
+    .section-1 {
+        display: flex;
+        height: 313px;
+        width: 637px;  
+        margin-top: 312.24px; 
+    }
+    .section-2 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatwedo {
+        height: 184px;
+        width: 637px;
+    }
+    
+    @media screen and (max-width: 480px) {
+        .image-container{
+            background-image: url("./images/headphones_hero_1.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            
+        }
+        .section-1 {
+            display: flex;
+            align-items: center;
+            height: 436px;
+            width: 357px;
+            margin-left: 9px;
+            margin-top: 312.24px; 
+        }
+        header nav{
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+            flex-direction: row-reverse;
+            width: 90%;
+        }
+        .whatwedo {
+            height: 325px;
+            width: 288px;
+        }
+    }
